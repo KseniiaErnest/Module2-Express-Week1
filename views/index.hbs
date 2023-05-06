@@ -1,0 +1,49 @@
+{{!-- 1 --}}
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My first view</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <h1>Ironhacker Be Like</h1>
+  <img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif">
+</body>
+</html> --}}
+
+{{!-- 2 --}}
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <h1>Hello {{name}}!</h1>
+  <p>Welcome to the {{bootcamp}}!!</p>
+</body>
+</html> --}}
+
+{{!-- 3 --}}
+{{!-- <h1>Hello {{name}}!</h1>
+{{#if lastName}}
+ <h2>This will be displayed!!</h2>
+ {{/if}} --}}
+
+{{!-- else for ^3 --}}
+{{!-- <h1>Hello {{name}} {{lastName}}!</h1>
+{{#if address}}
+<h2>This will not be displayed!!</h2>
+{{else}}
+<h2>This will be dispalyed because the 'address' property does not exists!!</h2>
+{{/if}} --}}
+
+{{!-- unless --}}
+{{!-- it will render the block if the expression returns a falsy value, but if we add adress property, then the warning should disapper --}}
+<h1>Hello {{name}} {{lastName}}!</h1>
+{{#unless address}}
+<h3>WARNING: We cannot find the address!</h3>
+{{/unless}}
